@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Home: React.FC = () => {
+const Donate: React.FC = () => {
   return (
     <div className="justify-items-center w-full">
-      <h1>Home</h1>
+      <h1>Donate</h1>
     </div>
   );
 };
 
-export default Home;
+export default Donate;
