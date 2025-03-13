@@ -15,10 +15,10 @@ const Menu: React.FC = () => {
   };
 
   return (
-    <nav className="w-full">
+    <nav className="w-full mb-15">
       <ul className="flex flex-row justify-around w-full">
         <li
-          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-gray-700 ${selectedItem === '/' ? 'bg-gray-700 text-white' : ''
+          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-white hover:text-black ${selectedItem === '/' ? 'bg-red-600 text-white' : ''
             }`}
         >
           <Link href="/" onClick={() => handleClick('/')}>
@@ -26,7 +26,7 @@ const Menu: React.FC = () => {
           </Link>
         </li>
         <li
-          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-gray-700 ${selectedItem === '/tutorials' ? 'bg-gray-700 text-white' : ''
+          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-white hover:text-black ${selectedItem === '/tutorials' ? 'bg-blue-600 text-white' : ''
             }`}
         >
           <Link href="/tutorials" onClick={() => handleClick('/tutorials')}>
@@ -34,7 +34,7 @@ const Menu: React.FC = () => {
           </Link>
         </li>
         <li
-          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-gray-700 ${selectedItem === '/download' ? 'bg-gray-700 text-white' : ''
+          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-white hover:text-black ${selectedItem === '/download' ? 'bg-red-600 text-white' : ''
             }`}
         >
           <Link href="/download" onClick={() => handleClick('/download')}>
@@ -42,7 +42,7 @@ const Menu: React.FC = () => {
           </Link>
         </li>
         <li
-          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-gray-700 ${selectedItem === '/cadastro' ? 'bg-gray-700 text-white' : ''
+          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-white hover:text-black ${selectedItem === '/cadastro' ? 'bg-blue-600 text-white' : ''
             }`}
         >
           <Link href="/cadastro" onClick={() => handleClick('/cadastro')}>
@@ -50,7 +50,7 @@ const Menu: React.FC = () => {
           </Link>
         </li>
         <li
-          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-gray-700 ${selectedItem === '/donate' ? 'bg-gray-700 text-white' : ''
+          className={`p-2 text-2xl rounded transition duration-300 ease-in-out hover:bg-white hover:text-black ${selectedItem === '/donate' ? 'bg-red-600 text-white' : ''
             }`}
         >
           <Link href="/donate" onClick={() => handleClick('/donate')}>

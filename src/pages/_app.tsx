@@ -3,7 +3,7 @@ import Menu from '@/components/menu'
 import Image from "next/image";
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <div className="w-dvw justify-items-center bg-black/50">
       <div className="min-h-screen justify-items-center w-300 p-8">
