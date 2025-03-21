@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!;
@@ -61,43 +62,49 @@ const FormComponent: React.FC = (props) => {
   };
 
   return (
-    <div className="flex justify-center items-center w-full">
-      <form
-        className="flex flex-col gap-4 bg-black/50 p-10 rounded-2xl w-full max-w-md"
-        onSubmit={handleSubmit}
-      >
-        <label htmlFor="login" className="text-lg font-medium">Login</label>
-        <input
-          type="text"
-          name="Login"
-          id="login"
-          className="p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
-          onChange={(e) => setLogin(e.target.value)}
-        />
+    <>
+      <Head>
+        <title>Cadastro - WYD Revolution</title>
+        <meta name="description" content="Cadastro" />
+      </Head>
+      <div className="flex justify-center items-center w-full">
+        <form
+          className="flex flex-col gap-4 bg-black/50 p-10 rounded-2xl w-full max-w-md"
+          onSubmit={handleSubmit}
+        >
+          <label htmlFor="login" className="text-lg font-medium">Login</label>
+          <input
+            type="text"
+            name="Login"
+            id="login"
+            className="p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
+            onChange={(e) => setLogin(e.target.value)}
+          />
 
-        <label htmlFor="email" className="text-lg font-medium">Email</label>
-        <input
-          type="email"
-          name="Email"
-          id="email"
-          className="p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
-          onChange={(e) => setEmail(e.target.value)}
-        />
+          <label htmlFor="email" className="text-lg font-medium">Email</label>
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            className="p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-        <label htmlFor="senha" className="text-lg font-medium">Senha</label>
-        <input
-          type="password"
-          name="Senha"
-          id="senha"
-          className="p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          <label htmlFor="senha" className="text-lg font-medium">Senha</label>
+          <input
+            type="password"
+            name="Senha"
+            id="senha"
+            className="p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-        <button type="submit" className="p-2 bg-green-500 text-white rounded transition duration-300 ease-in-out hover:bg-green-600 cursor-pointer">
-          Cadastrar
-        </button>
-      </form>
-    </div>
+          <button type="submit" className="p-2 bg-green-500 text-white rounded transition duration-300 ease-in-out hover:bg-green-600 cursor-pointer">
+            Cadastrar
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 

@@ -1,10 +1,17 @@
+import Head from 'next/head';
 import React from 'react';
 
-const Home: React.FC = () => {
+const Home: React.FC = (props) => {
   return (
-    <div className="justify-items-center w-full">
-      <h1>Home</h1>
-    </div>
+    <>
+      <Head>
+        <title>WYD Revolution</title>
+        <meta name="description" content="Home" />
+      </Head>
+      <div className="justify-items-center w-full">
+        <h1>Home</h1>
+      </div>
+    </>
   );
 };
 
