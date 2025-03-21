@@ -6,7 +6,7 @@ const Donate: React.FC = (props) => {
   return (
     <div className="flex flex-col gap-8">
       <span className='bg-black/50 p-2 text-center text-lg text-red-600'>
-        OBS: Após fazer o pagamento enviar comprovante para AMD pelo Discord para validar doação e receber o bonus.
+        OBS: Após fazer o pagamento enviar comprovante para ADM pelo Discord para validar doação e receber o bonus.
       </span>
       <div className='flex gap-8'>
         <CardDonate
