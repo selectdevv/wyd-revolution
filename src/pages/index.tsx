@@ -8,8 +8,8 @@ const Home: React.FC = (props) => {
         <title>WYD Revolution</title>
         <meta name="description" content="Home" />
       </Head>
-      <div className="justify-items-center w-full">
-        <h1>Home</h1>
+      <div className="felx bg-black/50 rounded p-8 justify-items-center">
+        <h1 className='text-5xl'>EM CONSTRUÇÃO</h1>
       </div>
     </>
   );
